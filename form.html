@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="./response.html" name="biodata" target="_blank" method="get">
+    <fieldset>
+        <legend align="center">biodata</legend>
+        <label for="name">name: </label>
+        <input type="text" id="name" placeholder="enter your name" required><br>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass"><br>
+        <label for="dob">DOb</label>
+        <input type="date" id="dob" name="dob">
+        <label for="email ">email</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="tel">phone</label>
+        <input type="tel" id="tel" name="tel" required> 
+        <label for="add">
+       address
+        </label>
+        <textarea name="text" id="add" rows="5" cols="23"></textarea>
+        <label for="gender">gender</label>
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">female</label>
+        <label for="check">vehicles u have</label>
+        <input type="checkbox" id="check" name="vehicles1">
+        <label for="check">car</label>
+        <input type="checkbox" id="check" name="vehicles2" checked>
+        <label for="check">bike</label>
+        <label for="select">language</label>
+        <select name="select" id="select">
+            <option valuee="">select your language</option>
+            <optgroup label="backend"></optgroup>
+            <option value="java">java</option>
+             <option value="java">c++</option></optgroup>
+              <optgroup label="frontend"><option value="c">c</option><option value="C#">c#</option></optgroup>
+
+        </select>
+        <label for="url">URL</label>
+        <input for ="URl" id="url" name="url" placeholder="enter the ">
+        <label for="file">file upload</label>
+        <input type="file" id="file" name="file" ><br><br>
+        <label for="attempt">attempt</label>
+        <input type="number" id="attempt" name="attempt" min="1" max="10" step="2">
+        <label for="appointment">appointment</label>
+      <input type="time" id="appointment" name="appointment"><br>
+      <input type="submit">
+      <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
